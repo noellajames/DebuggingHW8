@@ -11,9 +11,6 @@
 
 #define MATCH_ALL_CHAR  '.'
 
-static parse_state_t parse_states[MAX_PARSE_STATES];
-static int state_count = 0;
-
 static char buffer[MAX_BUF_SIZE];
 
 static int binary_file = 0;
