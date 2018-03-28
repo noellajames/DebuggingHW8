@@ -4,12 +4,12 @@
 #include "mypattern.h"
 #include "myfilter.h"
 #include "myutils.h"
-
+#include "handleexistingstates.h"
 /* Transitionals all activite state to the next applicable
 state i.e active, end (accept) or reject state.  
 Additionally cleans up rejected / end states to ensure 
 that the buffer does not overflow */
-int handle_existing_states(unsigned char uch, int count, parse_state_t parse_states, int state_count) {
+int handle_existing_states(unsigned char uch, int count, parse_state_t* parse_states, int state_count) {
     int i;
     int matched = 0;
     int empty_slots = 0;

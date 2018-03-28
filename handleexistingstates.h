@@ -10,7 +10,7 @@ typedef struct parse_state {
 }parse_state_t, *parse_state_p ;
 
 
-int handle_existing_states(unsigned char, int, parse_state_t, int);
+int handle_existing_states(unsigned char, int, parse_state_t*, int);
 
 
 #endif
