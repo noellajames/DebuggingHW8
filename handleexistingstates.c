@@ -6,6 +6,8 @@
 #include "cantransition.h"
 #include "handleexistingstates.h"
 
+#define MAX_PARSE_STATES	1024
+
 static parse_state_t parse_states[MAX_PARSE_STATES];
 static int state_count = 0;
 
