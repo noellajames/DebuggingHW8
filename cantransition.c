@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <error.h>
 #include "mypattern.h"
-#include "myfilter.h"
 #include "myutils.h"
 #include "cantransition.h"
 
