@@ -4,6 +4,7 @@
 #include "mypattern.h"
 #include "myfilter.h"
 #include "myutils.h"
+#include "cantransition.h"
 #include "handleexistingstates.h"
 /* Transitionals all activite state to the next applicable
 state i.e active, end (accept) or reject state.  

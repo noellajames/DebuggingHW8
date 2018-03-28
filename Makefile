@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-I.
-DEPS = myutils.h mypattern.h myfilter.h handleexistingstates.h
-OBJ = mygrep.o myutils.o mypattern.o myfilter.o handleexistingstates.o
+DEPS = myutils.h mypattern.h myfilter.h handleexistingstates.h cantransition.h
+OBJ = mygrep.o myutils.o mypattern.o myfilter.o handleexistingstates.o cantransition.o
 TARGET = mygrep
 
 %.o: %.c $(DEPS)
