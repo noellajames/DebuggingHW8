@@ -65,7 +65,7 @@ int filter_input(void) {
         if (count < MAX_BUF_SIZE){
             buffer[count++] = ch;
         }
-        matched += handle_existing_states(ch,count,parse_states,state_count);
+        matched += handle_existing_states(ch,count);
     }
     if (binary_file && total_matched > 0) {
         printf("Binary file (standard input) matches\n");

@@ -13,7 +13,7 @@ static int state_count = 0;
 state i.e active, end (accept) or reject state.  
 Additionally cleans up rejected / end states to ensure 
 that the buffer does not overflow */
-int handle_existing_states(unsigned char uch, int count, int state_count) {
+int handle_existing_states(unsigned char uch, int count) {
     int i;
     int matched = 0;
     int empty_slots = 0;
