@@ -7,7 +7,7 @@ TARGET = mygrep
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-all: $(TARGET)
+all: mygrep
 
 mygrep: $(OBJ)
 	gcc -o $@ $^ $(CFLAGS)
